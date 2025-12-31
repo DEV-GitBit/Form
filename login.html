@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      hr {width: 50%; visibility: hidden;}
+      input {color:blueviolet; background-color: aquamarine; font-family:Marker Felt, fantasy;font-size: 150%; border-radius: 40px; text-align: center;}
+      input {transition: transform 0.3s;}
+      input:hover{
+        transform: translateX(-10);
+          transform: scale(1.1);
+      }
+      label {font-family:Jazz LET, fantasy; text-shadow: 0px 0px 10px black ;color: whitesmoke;}
+      body {background-image: url(bg.jpg); text-align: center;}
+      h1 {font-size: 600%; font-family:Jazz LET, fantasy;outline-color: black;font-weight:700;color:coral}
+      u {color: beige;}
+      form {font-size: 200%;}
+      a {color:rgb(229, 209, 62);font-family:Jazz LET, fantasy;background-color:rgb(200, 34, 241);}
+      span {color:whitesmoke; font-family: Georgia, serif;text-shadow: 0px 0px 10px black ;}
+      #submit1 {font-size: 34px;}
+      #submit1 {transition:transform 0.3s;}
+      #submit1:hover{
+          transform: translateX(-10);
+          transform: scale(1.1);
+      }
+      #pass1 {
+        display: inline-block;
+        /* position: absolute; */
+      }
+      #pass2 {
+        display: inline-block;
+        /* position: absolute;
+        left: 480px; */
+      }
+      #name{
+        display: inline-block;
+        /* position: absolute;
+        left: 481px; */
+      }
+
+      #or{
+        font-size: larger;text-shadow: 0px 0px 5px black;color: burlywood;
+      }
+        
+        
+    </style>
+    <u><h1>Login</h1></u>
+  </head>
+  <body>
+    <br /><br />
+    <form autocomplete="off">
+
+      
+      <input
+        type="email"
+        id="mail"
+        placeholder="Enter your Email"
+      >
+      <p id="or">OR</p>
+
+      <input
+        type="text"
+        id="number"
+        placeholder="Enter your Mobile No."
+        pattern="[789][0-9]{9}"
+        maxlength="10"
+        title="Enter a Valid Number"
+      /><br /><br />
+
+      <input
+        type="password"
+        id="pass2"
+        name="pass"
+        placeholder="Enter Your Password"
+        maxlength="20"
+        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" 
+        required
+      /><br /><br />
+
+      <input id="submit1" type="submit" />
+      <br /><br /><hr>
+      <div>
+        <span>Forgot Password? </span><a href="fp.html">_Change It_</a>
+      </div>
+      <br>
+      <div>
+        <span>Don't have an account? </span><a href="index.html">_SignUp_</a>
+      </div>
+    </form>
+  </body>
+</html>

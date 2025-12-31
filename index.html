@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+
+      input {color:blueviolet; background-color: aquamarine; font-family:Marker Felt, fantasy;font-size: 150%; border-radius: 40px; text-align: center;}
+      input {transition: transform 0.3s;}
+      input:hover{
+        transform: translateX(-10);
+          transform: scale(1.1);
+      }
+      label {font-family:Jazz LET, fantasy; text-shadow: 0px 0px 10px black ;color: whitesmoke;}
+      body {background-image: url(bg.jpg); text-align: center;}
+      h1 {font-size: 600%; font-family:Jazz LET, fantasy;outline-color: black;font-weight:700;color:coral}
+      u {color: beige;}
+      form {font-size: 200%;}
+      a {color:rgb(229, 209, 62) ;font-family:Jazz LET, fantasy; background-color:rgb(200, 34, 241);}
+      div {
+        color:whitesmoke; font-family: Georgia, serif;
+      }
+      #submit1 {font-size: 34px;}
+      #submit1 {transition:transform 0.3s;}
+      #submit1:hover{
+          transform: translateX(-10);
+          transform: scale(1.1);
+      }
+      #pass1 {
+        display: inline-block;
+        /* position: absolute; */
+      }
+      #pass2 {
+        /* display: inline-block; */
+        /* position: absolute; */
+        left: 481px;
+      }
+      #name{
+        /* display: inline-block; */
+        /* position: absolute; */
+        left: 481px;
+      }
+        
+        
+    </style>
+  </head>
+  <body>
+    <u><h1>SignUp</h1></u>
+    <br /><br />
+    <form>
+      <!-- <label for="name">Name:</label> -->
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter Your Name"
+        required
+      /><br><br>
+
+      <input
+        type="email"
+        id="mail"
+        placeholder="Enter your Email"
+      /><br><br>
+      <input
+      type="number"
+      placeholder="Enter Your Mobile No."
+      >
+      <br><br>
+      <input
+      type="password"
+      id="pass2"
+      name="pass"
+      placeholder="Enter Your Password"
+      maxlength="10"
+    >
+      <br><br><br>
+
+      <label for="age">Age:</label>
+      <input
+        type="number"
+        id="age"
+        name="age"
+        min="16"
+        max="60"
+        value="16"
+      /><br /><br />
+
+      <label for="gender">Gender:</label>
+
+      <input type="radio" id="male" name="gender" />
+      <label for="male">Male</label>
+
+      <input type="radio" id="female" name="gender" />
+      <label for="female">Female</label>
+
+      <input type="radio" id="Other" name="gender" />
+      <label for="Other">Other</label>
+
+      <br><br>
+
+      <input id="submit1" type="submit" /><br /><br />
+
+      <div>
+        <span id="login">Already a user ? </span><a href="login.html">_Login_</a>
+      </div>
+    </form>
+  </body>
+</html>
